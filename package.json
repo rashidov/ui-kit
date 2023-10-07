@@ -1,0 +1,28 @@
+{
+  "name": "@rashidov/ui-kit",
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com/rashidov"
+  },
+  "version": "1.0.0",
+  "description": "dashboard ui-kit",
+  "main": "dist/esm/index.js",
+  "module": "dist/cjs/index.js",
+  "files": ["dist/**/*"],
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "build": "rollup -c"
+  },
+  "author": "Rashidov Aidar",
+  "license": "ISC",
+  "devDependencies": {
+    "@rollup/plugin-terser": "^0.4.4",
+    "@rollup/plugin-typescript": "^11.1.5",
+    "@types/react": "^18.2.25",
+    "node-sass": "^9.0.0",
+    "react": "^18.2.0",
+    "rollup": "^4.0.2",
+    "rollup-plugin-dts": "^6.1.0",
+    "rollup-plugin-postcss": "^4.0.2",
+    "tslib": "^2.6.2"
+  }
+}
