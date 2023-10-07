@@ -10,17 +10,18 @@ module.exports = [
     output: [
       {
         file: packageJson.module,
-        format: 'cjs'
+        format: 'cjs',
       },
       {
         file: packageJson.main,
-        format: 'esm'
+        format: 'esm',
       }
     ],
     external: ['react'],
     plugins: [
       typescript({
-        tsconfig: './tsconfig.json'
+        tsconfig: './tsconfig.json',
+        exclude: ['**/*.stories.tsx'],
       }),
       postcss({
         extract: 'index.css',
